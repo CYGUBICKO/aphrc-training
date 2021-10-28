@@ -8,6 +8,10 @@ current: target
 vim_session:
 	bash -cl "vmt notes.md structure.md"
 
+autopipeR = defined
+
+Sources += Makefile
+
 ######################################################################
 
 Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib)
@@ -23,15 +27,15 @@ Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib)
 
 ######################################################################
 
-index.html.pages: index.rmd
+index.html: index.rmd
 	$(knithtml)
+
+index.html.pages: index.html
 
 
 ######################################################################
 
 ### Makestuff
-
-Sources += Makefile
 
 ## Sources += content.mk
 ## include content.mk
@@ -47,7 +51,9 @@ makestuff/Makefile:
 -include makestuff/os.mk
 
 -include makestuff/texi.mk
--include makestuff/pipeR.mk
 
+-include makestuff/pandoc.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
+
+-include makestuff/pipeR.mk
