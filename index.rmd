@@ -1,1 +1,10 @@
-This is a welcome page
+---
+title: "Tutorial 1: Introduction"
+author: "Steve Cygu"
+date: "`r format(Sys.time(), '%d %B %Y ')`"
+output: html_document
+#  tufte::tufte_html:
+#     pandoc_args: ["--dpi", "300"]
+---
+
+This is a welcome page!
