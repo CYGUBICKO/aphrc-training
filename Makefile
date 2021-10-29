@@ -28,6 +28,7 @@ Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib *.css)
 style.css.docs: style.css
 
 index.html.newpages: index.rmd
+training_outline.html.newpages: training_outline.rmd
 
 
 ######################################################################

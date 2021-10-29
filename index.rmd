@@ -19,3 +19,16 @@ The training serves as an introduction to \textbf{R} programming language as a t
 - Be able to load, clean, transform, summarize and visualize data
 - Produce meaningful data insights
 - Automate R processes and analysis
+
+# Training activities
+
+The training will involve at least one of the following:
+
+- The trainer presents basic ideas
+- Live coding sessions
+- Trainees posting and/or solving problems
+- Optional [Your Turn](your_turn.html) tasks 
+
+# Communication channels
+
+- TBC
