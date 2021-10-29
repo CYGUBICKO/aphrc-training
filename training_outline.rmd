@@ -1,2 +1,29 @@
 Here is the _tentative_ outline and schedule for the training. Feel free to make suggestion on how to improve it.
 
+```{r echo=FALSE,message=FALSE,results="asis",warning=FALSE}
+library(huxtable)
+library(dplyr)
+library(readr)
+library(stringr)
+options(knitr.kable.NA="")
+mklinks <- function(x, dir="docs", prefix="",extension=".html",raw=FALSE) {
+    sapply(strsplit(as.character(x),";"),
+           function(y) {
+               if (all(is.na(y))) return(NA)
+               if (!raw) {
+                   paste(sprintf("[%s](%s/%s%s.%s)",y,dir,prefix,y,extension),
+                         collapse=";")
+               } else {
+                   y
+               }
+           })
+}
+
+dd <- (read_csv("admin/schedule.csv")
+	%>% mutate(across(c(assignments,handouts,recordings),~mklinks(., raw=TRUE)))
+	%>% hux()
+	%>% print_html(max_width=1000) 
+)
+knitr::kable(dd)
+```
+
