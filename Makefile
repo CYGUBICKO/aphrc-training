@@ -15,13 +15,15 @@ Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib)
 %.html.newpages: %.rmd
 	$(MAKE) docs
 	echo "library(rmarkdown); render_site(\"$*.rmd\")" | R --slave
-	mv site_libs docs
+	cp -a site_libs docs
+	rm -rf site_libs
 	cp $*.html docs
 	git add -f docs/$*.html
 
 ######################################################################
 
 _site.yml:_site.yml;
+style.css: style.css;
 
 index.html.newpages: index.rmd
 
