@@ -11,6 +11,7 @@ Sources += Makefile
 
 Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib)
 
+######################################################################
 
 %.html.newpages: %.rmd
 	$(MAKE) docs

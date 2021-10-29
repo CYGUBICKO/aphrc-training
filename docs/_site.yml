@@ -1,15 +1,21 @@
-name: "nicks-website"
-output_dir: "."
+name: "Data Management and Analysis"
 navbar:
-  title: "Nicks Website"
+  title: "HOME"
   left:
-    - text: "Home"
-      href: index.html
-    - text: "Projects"     ##### the new
-      href: projects.html  ##### stuff
+    - text: "Training Outline"
+      href: training_outline.html
+    - text: "Useful Links"
+      href: useful_links.html
+    - text: "Your Turn"
+      href: your_turn.html
     - text: "About Me"
-      href: about.html
+      href: about_me.html
+output_dir: "."
 output:
   html_document:
     theme: flatly
     css: style.css
+#    theme: yeti
+    highlight: textmate
+#    include:
+#      after_body: _footer.html
