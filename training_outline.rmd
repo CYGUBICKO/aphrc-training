@@ -24,6 +24,6 @@ dd <- (read_csv("admin/schedule.csv")
 	%>% hux()
 	%>% print_html(max_width=1000) 
 )
-knitr::kable(dd)
+dd
 ```
 
