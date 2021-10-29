@@ -9,22 +9,23 @@ Sources += Makefile
 
 ######################################################################
 
-Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib)
+Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib *.css)
 
 ######################################################################
 
 %.html.newpages: %.rmd
-	$(MAKE) docs
 	echo "library(rmarkdown); render_site(\"$*.rmd\")" | R --slave
+	$(MAKE) docs
 	cp -a site_libs docs
 	rm -rf site_libs
 	cp $*.html docs
-	git add -f docs/$*.html docs/site_libs
+	cp _site.yml docs
+	git add -f docs/$*.html docs/_site.yml docs/site_libs
 
 ######################################################################
 
-_site.yml.docs:_site.yml
-style.css: style.css;
+# _site.yml:_site.yml;
+style.css.docs: style.css
 
 index.html.newpages: index.rmd
 

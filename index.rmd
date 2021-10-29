@@ -1,10 +1,21 @@
 ---
-title: "Tutorial 1: Introduction"
-author: "Steve Cygu"
-date: "`r format(Sys.time(), '%d %B %Y ')`"
-output: html_document
-#  tufte::tufte_html:
-#     pandoc_args: ["--dpi", "300"]
+title: "Data Management and Analysis with R"
+compact-title: false
 ---
 
-This is a welcome page!
+# Training Description
+
+The training serves as an introduction to \textbf{R} programming language as a tool for data management and analysis of public health data. In particular: 
+
+- data exploration
+- data cleaning
+- data munging 
+- data analysis 
+- data visualization
+
+# Expected outcomes
+
+- Become familiar with R 
+- Be able to load, clean, transform, summarize and visualize data
+- Produce meaningful data insights
+- Automate R processes and analysis
