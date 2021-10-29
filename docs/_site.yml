@@ -13,7 +13,7 @@ navbar:
 output_dir: "."
 output:
   html_document:
-    theme: flatly
+#    theme: flatly
     css: style.css
 #    theme: yeti
     highlight: textmate
