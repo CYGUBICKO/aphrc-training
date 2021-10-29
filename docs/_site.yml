@@ -13,9 +13,9 @@ navbar:
 output_dir: "."
 output:
   html_document:
-#    theme: flatly
     css: style.css
 #    theme: yeti
+    theme: flatly
     highlight: textmate
 #    include:
 #      after_body: _footer.html
