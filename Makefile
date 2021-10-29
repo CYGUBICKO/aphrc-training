@@ -13,8 +13,7 @@ Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib)
 
 ######################################################################
 
-# index.html: index.rmd
-#	$(knithtml)
+_site.yml.docs:_site.yml
 
 index.html.docs: index.rmd
 
