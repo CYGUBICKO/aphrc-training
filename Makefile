@@ -22,7 +22,7 @@ Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib)
 
 ######################################################################
 
-_site.yml:_site.yml;
+_site.yml.docs:_site.yml
 style.css: style.css;
 
 index.html.newpages: index.rmd
