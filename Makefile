@@ -18,7 +18,7 @@ Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib)
 	cp -a site_libs docs
 	rm -rf site_libs
 	cp $*.html docs
-	git add -f docs/$*.html
+	git add -f docs/$*.html docs/site_libs
 
 ######################################################################
 
