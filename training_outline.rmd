@@ -24,7 +24,7 @@ mklinks <- function(x, dir="readings", prefix="",extension=".pdf",raw=FALSE) {
            })
 }
 
-dd <- (read_csv("admin/schedule.csv")
+dd <- (read_csv("docs/admin/schedule.csv")
 	%>% mutate(across(c(`Further Readings`, `Comment(s)`),~mklinks(., raw=TRUE)))
 	%>% kbl(escape = FALSE, vline="|")
 	%>% row_spec(0, background = "beige")
