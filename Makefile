@@ -1,4 +1,5 @@
-## This is mac-theobio/effects
+## https://github.com/CYGUBICKO/aphrc-training.git
+## git remote set-url origin git@github.com:CYGUBICKO/aphrc-training.git
 
 current: target
 -include target.mk
