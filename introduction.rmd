@@ -1,0 +1,40 @@
+---
+title: "Introduction"
+author: Steve Cygu
+date: "2021 Nov 04 (Thur)"
+compact-title: false
+output:
+  pdf_document:
+    extra_dependencies: ["float"]
+# bibliography: introduction.bib
+# link-citations: yes
+---
+
+## R interface
+
+![](r_interface.png)
+
+
+**Some functions we need to know**:
+
+ - `ls()`
+ - `setwd()`
+ - `getwd()`
+
+## Rstudio walkthrough
+
+- `Console`
+- `Environment`
+- `History`
+- `Connections`
+- `Files`
+- `Plots`
+- `Packages`
+- `help`
+- `Viewer`
+- `Knit`
+- `Insert`
+- `Run`
+- `Output Options`
+- `Tools -> Global Options...`
+- `spell-check`

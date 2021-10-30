@@ -24,6 +24,9 @@ Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib *.css)
 	git add -f docs/$*.html docs/_site.yml docs/site_libs
 	touch Makefile
 
+%.pdf: %.rmd
+	$(knitpdf)
+
 ######################################################################
 
 # _site.yml:_site.yml;
@@ -34,6 +37,10 @@ training_outline.html.newpages: training_outline.rmd
 useful_links.html.newpages: useful_links.rmd
 your_turn.html.newpages: your_turn.rmd
 about_me.html.newpages: about_me.rmd
+
+######################################################################
+## materials
+introduction.pdf.docs: introduction.rmd
 
 ######################################################################
 ## Task sets
