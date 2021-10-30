@@ -29,6 +29,8 @@ style.css.docs: style.css
 
 index.html.newpages: index.rmd
 training_outline.html.newpages: training_outline.rmd
+useful_links.html.newpages: useful_links.rmd
+your_turn.html.newpages: your_turn.rmd
 
 
 ######################################################################
