@@ -27,7 +27,7 @@ The training will involve at least one of the following:
 - The trainer presents basic ideas
 - Live coding sessions
 - Trainees posting and/or solving problems
-- Optional [Your Turn](your_turn.html){:target="_blank"} tasks 
+- Optional [Your Turn](your_turn.html) tasks 
 
 # Communication channels
 

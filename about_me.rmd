@@ -1,0 +1,13 @@
+---
+title: "About Me and other Trainers"
+compact-title: false
+---
+
+## Steve Cygu
+
+- **Still trying to figure this out** but you can check [this](https://cygubicko.github.io/miscellaneous/) out
+
+## Brian Kiprop
+
+- **A little organized**, see [here](https://www.qprop.me/)
+

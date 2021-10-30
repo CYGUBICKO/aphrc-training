@@ -21,6 +21,7 @@ Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib *.css)
 	cp $*.html docs
 	cp _site.yml docs
 	git add -f docs/$*.html docs/_site.yml docs/site_libs
+	touch Makefile
 
 ######################################################################
 
@@ -31,6 +32,11 @@ index.html.newpages: index.rmd
 training_outline.html.newpages: training_outline.rmd
 useful_links.html.newpages: useful_links.rmd
 your_turn.html.newpages: your_turn.rmd
+about_me.html.newpages: about_me.rmd
+
+######################################################################
+## Task sets
+task_set1.html.newpages: task_set1.rmd
 
 
 ######################################################################
