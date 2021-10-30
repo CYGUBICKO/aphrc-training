@@ -7,31 +7,31 @@ compact-title: false
 
 The first thing you need to do to get going is to download R. 
 
-- [Windows](https://cran.case.edu/bin/windows/base/)
-- [Mac](https://cran.case.edu/bin/macosx/)
-- [Linux](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/)
+- [Windows](https://cran.case.edu/bin/windows/base/){:target="_blank"}
+- [Mac](https://cran.case.edu/bin/macosx/){:target="_blank"}
+- [Linux](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/){:target="_blank"}
 
 Next step is to download Rstudio
 
-- [Rstudio](https://www.rstudio.com/products/rstudio/download/)
+- [Rstudio](https://www.rstudio.com/products/rstudio/download/){:target="_blank"}
 
 
 ## Other learning resources
 
 - Data carpentry platforms
 
-	- [coursera](https://www.coursera.org/){target=""_blank""}
-	- [datacamp](https://www.datacamp.com/){target=""_blank""}
-	- [udemy](https://www.udemy.com/){target=""_blank""}
+	- [coursera](https://www.coursera.org/){:target="_blank"}
+	- [datacamp](https://www.datacamp.com/){:target="_blank"}
+	- [udemy](https://www.udemy.com/){:target="_blank"}
 
 
 ## Universes
 
-- [https://www.tidyverse.org/](https://www.tidyverse.org/){target=""_blank""}
+- [https://www.tidyverse.org/](https://www.tidyverse.org/){:target="_blank"}
 
 
 ## Version control
 
-- [Happy Git and GitHub for the useR](https://beta.rstudioconnect.com/jennybc/happy-git-with-r/){target=""_blank""}
-- [Version Control with Git on GUI](https://jcszamosi.github.io/mcmaster_swc_git_gui/){target=""_blank""}
-- [Version Control with Git on GUI on Command line](https://swcarpentry.github.io/git-novice/){target=""_blank""}
+- [Happy Git and GitHub for the useR](https://beta.rstudioconnect.com/jennybc/happy-git-with-r/){:target="_blank"}
+- [Version Control with Git on GUI](https://jcszamosi.github.io/mcmaster_swc_git_gui/){:target="_blank"}
+- [Version Control with Git on GUI on Command line](https://swcarpentry.github.io/git-novice/){:target="_blank"}

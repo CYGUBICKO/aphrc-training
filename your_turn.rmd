@@ -5,5 +5,5 @@ compact-title: false
 
 **This page will be updated after respective session**
 
-- \textcolor{red}{red}
+- [blue]{color="blue"}
 - Thha
