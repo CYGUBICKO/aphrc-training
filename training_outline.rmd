@@ -1,3 +1,8 @@
+---
+title: "Scheduling and Outline"
+compact-title: false
+---
+
 Here is the _tentative_ outline and schedule for the training. Feel free to make suggestion on how to improve it.
 
 ```{r echo=FALSE,message=FALSE,results="asis",warning=FALSE}
@@ -5,6 +10,7 @@ library(kableExtra)
 library(dplyr)
 library(readr)
 library(stringr)
+options(knitr.kable.NA="")
 mklinks <- function(x, dir="docs", prefix="",extension=".html",raw=FALSE) {
     sapply(strsplit(as.character(x),";"),
            function(y) {
@@ -19,7 +25,9 @@ mklinks <- function(x, dir="docs", prefix="",extension=".html",raw=FALSE) {
 }
 
 dd <- (read_csv("admin/schedule.csv")
-	%>% kbl()
+	%>% kbl(escape = FALSE, vline="|")
+	%>% row_spec(0, background = "beige")
+	%>% column_spec(c(1,2,3,4,5,6,7),background="lightblue")
 	%>% kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 )
 dd
