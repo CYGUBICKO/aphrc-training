@@ -15,7 +15,7 @@ output:
   html_document:
     css: style.css
 #    theme: yeti
-    theme: flatly
+#    theme: flatly
 #    highlight: textmate
 #    include:
 #      after_body: _footer.html
