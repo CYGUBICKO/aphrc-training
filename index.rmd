@@ -32,3 +32,11 @@ The training will involve at least one of the following:
 # Communication channels
 
 - TBC
+
+# Acknowledgements
+
+This training isn't just a product of the trainers, but a result of works of many others (cited and not cited). There are a few particular people/organizations we would like to thank:
+
+- R online community
+- [https://aphrc.org/research-page/maternal-and-child-wellbeing/](MCW unit at APHRC)
+- [MacTheobio](https://mac-theobio.github.io/)

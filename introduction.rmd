@@ -15,12 +15,6 @@ output:
 ![](r_interface.png)
 
 
-**Some functions we need to know**:
-
- - `ls()`
- - `setwd()`
- - `getwd()`
-
 ## Rstudio walkthrough
 
 - `Console`
@@ -38,3 +32,145 @@ output:
 - `Output Options`
 - `Tools -> Global Options...`
 - `spell-check`
+
+
+## R Basics
+
+### Getting started with help
+
+- `?`, `help()`, `help.start()`, `help.search()`, `vignette()`
+- `args`
+- `example()`
+- `setwd()`
+- `getwd()`
+
+### Printing on the screen
+
+- Enter at the `command prompt (>)`
+- `print()`
+- `cat()`
+
+### Setting variables
+
+- `<-` (less-than  and hyphen with no space)
+- \textcolor{blue}{dynamically typed language}
+- `=`
+- `->`
+
+### Listing variables
+
+- `ls()`
+- `ls.str()`
+- `ls(all.names=TRUE)`
+
+### Deleting variables
+
+- `rm()`
+- `rm(list = ls())`
+
+### Creating Vectors
+
+- `c(...)`
+
+
+### Basic statistics
+
+mean(x)
+
+- `median(x)`
+- `sd(x)`
+- `var(x)`
+- `cor(x, y)`
+- `cov(x, y)`
+
+### Creating sequences
+
+- `n:m`
+- `seq()`
+- `rep()`
+
+
+### Comparing vectors
+
+- `==`
+- `!=`
+- `<`
+- `>`
+- `<=`
+- `>=`
+- `any()`
+- `all()`
+
+
+### Selecting elements
+
+- `[]`
+- `-`
+- `TRUE/FALSE`
+- `|`
+- `&`
+- `is.na()`
+- `is.null()`
+- `!`
+- `names()`
+
+### Vector arithmetic
+
+- `-/+/*//`
+- Implement `sd()` function
+
+
+### Saving workspace
+
+- `save()`
+- `saveRDS()`
+- `save.image()`
+
+
+### Viewing command history
+
+`history()`
+
+
+### Running an R script
+
+- `source()`
+
+
+### Some common mistakes
+
+- No parentheses after a function call
+- `< -` instead of `<-`
+- Incorrectly continuing expression to next lines
+- `=` instead of `==`
+- `1:n+1` instead of `1:(n+1)`
+- Failing to `load` installed `package`
+- Passing multiple arguments to a single-argument function
+- Single backslash (`\`) in Windows paths
+
+## Packages and Package installation
+
+### Load a package
+
+- `library()` vs `require()`
+
+### Remove loaded packages
+
+- `detach()`
+
+
+### Access built-in datasets
+
+- `data(dataname, package="pkgname")`
+
+
+### Install packages from CRAN
+
+- `install.packages()`
+
+
+### Install packages from github
+
+- `devtools`
+- `remotes`
+

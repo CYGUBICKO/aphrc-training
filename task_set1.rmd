@@ -1,1 +1,6 @@
-To be posted!!!
+Try some of these problems but it's still fine if they don't make sense now! :)
+
+1. Create a vector of respondents incomes ranging from Ksh. $0$ to Ksh. $100,000$. Call this `income`
+2. If there are other $5$ respondents whose incomes are not known, create a variable, `no_income`, for this
+3. Create a variable, `all_income`, containing all the incomes above
+4. Apply some of the basic statistical functions we have introduced to summarize `all_income`
