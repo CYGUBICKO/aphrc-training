@@ -41,11 +41,24 @@ about_me.html.newpages: about_me.rmd
 ######################################################################
 ## materials
 introduction.pdf.docs: introduction.rmd
+introduction.R.docs: introduction.R
 
 ######################################################################
 ## Task sets
 task_set1.html.newpages: task_set1.rmd
 
+
+######################################################################
+all:
+	$(MAKE) style.css.docs
+	$(MAKE) index.html.newpages
+	$(MAKE) training_outline.html.newpages
+	$(MAKE) useful_links.html.newpages
+	$(MAKE) your_turn.html.newpages
+	$(MAKE) about_me.html.newpages
+	$(MAKE) introduction.pdf.docs
+	$(MAKE) introduction.R.docs
+	$(MAKE) task_set1.html.newpages
 
 ######################################################################
 
