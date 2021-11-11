@@ -41,6 +41,8 @@ about_me.html.newpages: about_me.rmd
 ######################################################################
 ## materials
 introduction.pdf.docs: introduction.rmd
+introduction.Rout: introduction.R
+	$(pipeR)
 introduction.R.docs: introduction.R
 
 ######################################################################
