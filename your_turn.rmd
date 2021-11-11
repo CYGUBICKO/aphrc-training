@@ -17,3 +17,4 @@ colorize <- function(x, color) {
 ```
 
 - `r colorize("2021 Nov 04 (Thur): ", "gray")`[Task set 1](task_set1.html)
+- `r colorize("2021 Nov 11 (Thu): ", "gray")`[Task set 2](task_set2.html)

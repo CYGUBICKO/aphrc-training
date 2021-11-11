@@ -48,6 +48,7 @@ introduction.R.docs: introduction.R
 ######################################################################
 ## Task sets
 task_set1.html.newpages: task_set1.rmd
+task_set2.html.newpages: task_set2.rmd
 
 
 ######################################################################
@@ -61,6 +62,7 @@ all:
 	$(MAKE) introduction.pdf.docs
 	$(MAKE) introduction.R.docs
 	$(MAKE) task_set1.html.newpages
+	$(MAKE) task_set2.html.newpages
 
 ######################################################################
 

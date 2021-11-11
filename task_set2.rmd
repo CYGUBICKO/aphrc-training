@@ -1,0 +1,12 @@
+Try some of these problems but it's still fine if they don't make sense now! :)
+
+- Write a _function_ which takes in two numeric input variables (`height` and `weight`) and indicates whether one is:
+	- severely underweight (bmi less than 16)
+	- underweight (bmi at least 16 but less than 18.5)
+	- healthy (bmi at least 18.5 but less than 25)
+	- overweight (bmi at least 25 but less than 30)
+	- severely overweight (bmi at least 30)
+
+[\
+\mathrm{bmi} = \frac{\mathrm{weight}}{\mathrm{height}^2}
+\]
