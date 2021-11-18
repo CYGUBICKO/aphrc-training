@@ -45,11 +45,11 @@ getwd()
 x <- "This prints on the screen!"
 print(x)
 
-y <- "This prints on the \nnext line\n"
+y <- "This prints on the \nnext line\n" # cat + \n
 cat(y)
 
-m <- 3
-s <- 5
+m <- 7
+s <- 8
 z <- c("The mean is ", m, " and sd ", s, "\n")
 cat(z)
 
@@ -76,10 +76,11 @@ x1 == z2
 
 ls()
 
+#get(ls(pattern="y"))
+
 ## Include types and other details
 
 ls.str()
-
 
 #### ---- Creating vectors ----
 
@@ -95,14 +96,21 @@ v2
 ## Create evenly spaced sequences
 
 ### n:m
-n <- 5
+n <- 3
 m <- 10
 x <- n:m
+x
+
+height <- c(2.6, 1.7, 0.5)
+gender <- c("Female", "Female", "Male")
+mean(height)
+table(gender)
 
 ### seq
 # ?seq
 
 y <- seq(n, m)
+x==y
 all.equal(x, y)
 
 ## Set the spacing
@@ -115,9 +123,11 @@ y3 <- seq(0, 1, length.out=10)
 
 x1 <- rep(c("A", "B", "C"), 3)
 x1
+y1 <- rep(gender, 10)
 x2 <- rep(c("A", "B", "C"), each=3)
 x2
-
+y2 <- rep(gender, each=3)
+y2
 
 #### ---- Basic statistics ----
 
@@ -158,6 +168,8 @@ age[age>=age_cut]
 age[age>30 & age<50]
 
 ## ? those earning more than 500 and are aged below 40
+index <- income>100 & age < 40
+table(index)
 
 gender <- c("Male", "Male", "Female", NA, "Male", "Male")
 
