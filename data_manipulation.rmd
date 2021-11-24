@@ -11,8 +11,6 @@ output:
 
 \newpage
 \tableofcontents
-\listoffigures
-\listoftables
 \newpage
 
 ```{r setup, echo=FALSE, purl=FALSE, warning=FALSE, message=FALSE}
@@ -20,6 +18,7 @@ output:
 knitr::opts_chunk$set(fig.pos="H"
 	, out.extra=""
 	, comment=""
+	, echo=FALSE
 	, message=FALSE
 	, warning=FALSE
 )
@@ -151,3 +150,24 @@ print(data_summary)
 \subsection{Reading data from other sources}
 
 **R** can read data created in various formats (SPSS, SAS, Stata, Excel, CSV, TXT, etc).
+
+We will use a number of dataset for illustration:
+
+- **[Contraceptive Method Choice](https://archive.ics.uci.edu/ml/datasets/Contraceptive+Method+Choice)**: This dataset is a subset of the 1987 National Indonesia Contraceptive Prevalence Survey. The samples are married women who were either not pregnant or do not know if they were at the time of interview. The problem is to predict the current contraceptive method choice (no use, long-term methods, or short-term methods) of a woman based on her demographic and socio-economic characteristics.
+
+\subsubsection{CSV and Tab-delimited files}
+
+
+
+```{r read_csv, result="asis"}
+## Dataset
+contraceptive_df <- read.csv("./docs/data/contraceptive_data.csv", sep=",", header=TRUE)
+str(contraceptive_df)
+
+## Data description
+contraceptive_desc <- read.csv("./docs/data/contraceptive_description.csv", sep=",", header=TRUE)
+(contraceptive_desc
+	%>% kableExtra::kbl(caption="Data description", booktabs = TRUE)
+	%>% kableExtra::kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+)
+```

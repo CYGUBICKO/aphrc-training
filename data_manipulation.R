@@ -55,3 +55,16 @@ data_summary <- (age_gender_edu_df
 )
 print(data_summary)
 
+
+## ----read_csv, result="asis"--------------------------------------------------
+## Dataset
+contraceptive_df <- read.csv("./docs/data/contraceptive_data.csv", sep=",", header=TRUE)
+str(contraceptive_df)
+
+## Data description
+contraceptive_desc <- read.csv("./docs/data/contraceptive_description.csv", sep=",", header=TRUE)
+(contraceptive_desc
+	%>% kableExtra::kbl(caption="Data description", booktabs = TRUE)
+	%>% kableExtra::kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
+)
+
