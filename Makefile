@@ -82,6 +82,7 @@ all:
 	$(MAKE) task_set1.html.newpages
 	$(MAKE) task_set2.html.newpages
 	$(MAKE) contraseptive.R.docs
+	$(MAKE) data_manipulation.R.docs
 	$(MAKE) data_manipulation.pdf.docs
 
 ######################################################################
