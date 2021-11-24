@@ -27,6 +27,13 @@ Sources += $(wildcard *.R *.md *.Rnw *.rmd *.bib *.css)
 %.pdf: %.rmd
 	$(knitpdf)
 
+## Extract R codes
+
+%.R: %.rmd
+	echo "library("knitr"); purl(\"$*.rmd\")" | R --slave
+
+%: %.pdf ;
+
 ######################################################################
 
 # _site.yml:_site.yml;
@@ -39,11 +46,21 @@ your_turn.html.newpages: your_turn.rmd
 about_me.html.newpages: about_me.rmd
 
 ######################################################################
+## datasets
+contraseptive.Rout: contraseptive.R
+	$(pipeR)
+
+######################################################################
 ## materials
+### Introduction
 introduction.pdf.docs: introduction.rmd
 introduction.Rout: introduction.R
 	$(pipeR)
 introduction.R.docs: introduction.R
+
+### Data manipulation
+data_manipulation.pdf: data_manipulation.rmd
+data_manipulation.R: data_manipulation.pdf
 
 ######################################################################
 ## Task sets
@@ -63,6 +80,8 @@ all:
 	$(MAKE) introduction.R.docs
 	$(MAKE) task_set1.html.newpages
 	$(MAKE) task_set2.html.newpages
+	$(MAKE) contraseptive.R.docs
+	$(MAKE) data_manipulation.pdf.docs
 
 ######################################################################
 
