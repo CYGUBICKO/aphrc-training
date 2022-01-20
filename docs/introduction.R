@@ -177,11 +177,33 @@ gender <- c("Male", "Male", "Female", NA, "Male", "Male")
 
 ## ? Exclude NA
 
+age <- c(20, 35, NA, NA, 67)
+mean(age) # NA
+mean(age, na.rm = TRUE)
+
+age2 <- age[!is.na(age)]
+mean(age2)
+is.na(NA)
+
 
 #### ---- Vector arithmetic ----
 
 ## implement
 ### mean
+
+x1 <- c(x=1, y=2, z=3) #named vector
+x2 <- c(1,2,3) #unnamed
+
+mymean <- function(x) {
+	m <- mean(x)
+	s <- sd(x)
+	out <- c(mean=m, sd=s)
+	return(out)
+}
+
+result <- mymean(age2)
+result
+
 ### var
 ### sd
 
@@ -189,4 +211,23 @@ gender <- c("Male", "Male", "Female", NA, "Male", "Male")
 
 # source("run_me.R")
 
-#### ---- Packages and Package installation ----
+#### ---- Packages and Package installation ---- 
+
+# Installation
+## CRAN
+# install.packages("pkgname") # CRAN
+# install.packages("pcoxtime")
+# library(pcoxtime)
+pcoxtime::pcoxtheme()
+
+## github
+
+
+# install.packages("remotes")
+# remotes::install_github("mac-theobio/effects")
+
+# library(vareffects)
+
+
+
+
