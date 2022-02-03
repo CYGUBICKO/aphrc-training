@@ -68,3 +68,9 @@ contraceptive_desc <- read.csv("./docs/data/contraceptive_description.csv", sep=
 	%>% kableExtra::kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
 )
 
+
+## ----read_xlsx----------------------------------------------------------------
+library(openxlsx)
+contraceptive_df2 <- read.xlsx("./docs/data/contraceptive_data.xlsx")
+str(contraceptive_df2)
+

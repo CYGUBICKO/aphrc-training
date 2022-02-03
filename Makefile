@@ -63,6 +63,11 @@ introduction.R.docs: introduction.R
 data_manipulation.pdf: data_manipulation.rmd
 data_manipulation.R: data_manipulation.pdf
 
+### Data visualization
+data_visualization.pdf: data_visualization.rmd
+data_visualization.R: data_visualization.pdf
+
+
 ######################################################################
 ## Task sets
 task_set1.html.newpages: task_set1.rmd
@@ -84,6 +89,8 @@ all:
 	$(MAKE) contraseptive.R.docs
 	$(MAKE) data_manipulation.R.docs
 	$(MAKE) data_manipulation.pdf.docs
+	$(MAKE) data_visualization.R.docs
+	$(MAKE) data_visualization.pdf.docs
 
 ######################################################################
 

@@ -171,3 +171,27 @@ contraceptive_desc <- read.csv("./docs/data/contraceptive_description.csv", sep=
 	%>% kableExtra::kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))
 )
 ```
+
+
+\subsubsection{Reading excel data}
+
+- The `openxlsx` package makes writing to Excel files relatively easy. While there are lots of options in openxlsx, a typical pattern is to specify an Excel filename and a sheet name:
+
+```{r read_xlsx}
+library(openxlsx)
+contraceptive_df2 <- read.xlsx("./docs/data/contraceptive_data.xlsx")
+str(contraceptive_df2)
+```
+
+- You can also save/write data from R to Excel (your turn!)...
+
+
+\subsubsection{Reading stata data}
+
+- The `haven` package has functions for reading different `Stata` files.
+
+\subsection{Saving and sharing objects}
+
+Suppose you want to store R object for later use or share with other or across computers...
+
+` `save()` then use `load()` to access the file
